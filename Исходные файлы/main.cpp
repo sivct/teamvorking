@@ -1,5 +1,5 @@
 #include "main.h"
-#include "sivct.h"
+#include "Bouble_Sort.h"
 
 int main() {
 	setlocale(LC_ALL, "Rus");

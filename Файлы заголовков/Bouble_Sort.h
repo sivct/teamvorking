@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef SIVCT_H
-#define SIVCT_H 
+#ifndef BOUBLE_SORT_H
+#define BOUBLE_SORT_H
 
 #include <iostream>
 #include <algorithm>
