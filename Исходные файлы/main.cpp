@@ -1,5 +1,6 @@
 #include "main.h"
 #include "Bouble_Sort.h"
+#include "rm_minus_num.h"
 
 int main() {
 	setlocale(LC_ALL, "Rus");
