@@ -9,3 +9,4 @@
 
 # Игнорировать .json
 *.json
+CppProperties.json
