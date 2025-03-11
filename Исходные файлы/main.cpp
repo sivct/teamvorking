@@ -2,10 +2,15 @@
 
 int main() {
 	setlocale(LC_ALL, "Rus");
-	const int32_t MAX_SIZE = 100, SECOND_MAX_SIZE{ 100 }, MAX{ MAX_SIZE + SECOND_MAX_SIZE };
-	int32_t size{}, secondsize{}, switch_on{};
-	int64_t arr[MAX_SIZE], secondarr[SECOND_MAX_SIZE], allarr[MAX];
+	const int32_t MAX_SIZE = 100;
+	int32_t size{};
+	int64_t arr[MAX_SIZE];
+	void Input_Size(size);
+	void Check_Size(size);
 
+	void Input_Array(arr, size);
+
+	void PrintArray(arr, size);
 
 
 
@@ -14,4 +19,5 @@ int main() {
 
 	return 0;
 }
+
 
