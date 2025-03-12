@@ -5,6 +5,6 @@
 
 #include <iostream>
 #include <algorithm>
-void Bouble_Sort(int64_t*, int32_t);
+void Bouble_Sort(int32_t*, int32_t);
 
 #endif

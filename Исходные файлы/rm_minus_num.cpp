@@ -3,7 +3,7 @@
 
 
 
-void Negative_Numbers_Are_Equal_To_Zero(int64_t* arr, int32_t size) {
+void Negative_Numbers_Are_Equal_To_Zero(int32_t* arr, int32_t size) {
 	std::cout << "¬ведите размер массива >> ";
 	std::cin >> size;
 

@@ -41,12 +41,15 @@ int main() {
 			switch (choise) {
 			case 'c':
 				PrintArray(arr_char, size);
+				std::cout << std::endl;
 				break;
 			case 'd':
 				PrintArray(arr_doub, size);
+				std::cout << std::endl;
 				break;
 			case 'i':
 				PrintArray(arr_int, size);
+				std::cout << std::endl;
 				break;
 			default:
 				break;
