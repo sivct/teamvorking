@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "main.h"
 
 int main() {
 	setlocale(LC_ALL, "Rus");
@@ -28,7 +28,6 @@ int main() {
 
 		Input_Element_To_Find(element_to_find);
 		std::cout << "position of element >> " << FindElement(arr_char, size, element_to_find) << "\n";//2
-
 
 		std::cout << "count of elements between nulls >> " << CountElements(arr_char, size) << "\n";//3
 		system("pause");
@@ -63,3 +62,4 @@ int main() {
 
 	return 0;
 }
+

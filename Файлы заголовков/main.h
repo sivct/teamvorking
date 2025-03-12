@@ -1,5 +1,5 @@
-#ifndef HEADER_H
-#define HEADER_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <iostream>
 const int32_t MAX_SIZE = 100;
@@ -8,6 +8,7 @@ void Input_your_choise(char&);
 void Input_Size(int32_t&);
 bool Check_Nat(int64_t);
 void Check_Size(int32_t);
+void Output_Arr(int64_t*, int32_t);
 
 template <class T>
 void Input_Array(T* arr, int32_t& size) {
@@ -85,6 +86,5 @@ int32_t CountElements(T* array, int32_t size) {
 		return count_of_null;
 	}
 }
-
 
 #endif

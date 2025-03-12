@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "main.h"
 
 void Input_Size(int32_t& size) {
 	std::cout << "¬ведите размер массива >> ";
