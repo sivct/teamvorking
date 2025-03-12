@@ -1,7 +1,4 @@
-#include "main.h"
-
-
-
+#include "Header.h"
 
 void Input_Size(int32_t& size) {
 	std::cout << "¬ведите размер массива >> ";
@@ -20,14 +17,11 @@ void Check_Size(int32_t size) {
 	}
 }
 
-void Input_Array(int64_t* arr, int32_t& size) {
-	std::cout << "¬ведите все элементы массива >> ";
-	for (size_t number{ 0 }; number < size; ++number) {
-		std::cin >> arr[number];
-		Check_Num(arr[number]);
-	}
-}
-
 bool Check_Nat(int64_t num) {
 	return num > 0;
+}
+
+void Input_your_choise(char& choise) {
+	std::cout << "Input your choise >> ";
+	std::cin >> choise;
 }
