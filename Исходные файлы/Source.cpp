@@ -22,6 +22,11 @@ bool Check_Nat(int64_t num) {
 }
 
 void Input_your_choise(char& choise) {
-	std::cout << "Input your choise >> ";
+	std::cout << "Input your choise (between 'c == char' , 'd == double' or 'i == int') >> ";
 	std::cin >> choise;
+}
+
+void CLS() {
+	std::cout << "Хотите очистить экран?[y/n]: ";
+	system("CLS");
 }

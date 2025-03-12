@@ -9,13 +9,13 @@ void Input_Size(int32_t&);
 bool Check_Nat(int64_t);
 void Check_Size(int32_t);
 void Output_Arr(int64_t*, int32_t);
+void CLS();
 
 template <class T>
 void Input_Array(T* arr, int32_t& size) {
 	std::cout << "¬ведите все элементы массива >> ";
 	for (size_t number{ 0 }; number < size; ++number) {
 		std::cin >> arr[number];
-		Check_Nat(arr[number]);
 	}
 }
 
@@ -23,7 +23,6 @@ template <class T >
 void Input_Element_To_Find(T& element) {
 	std::cout << "¬ведите элемент массива, индекс которого хотите узнать >> ";
 	std::cin >> element;
-	Check_Nat(element);
 }
 
 template <class T >//1
