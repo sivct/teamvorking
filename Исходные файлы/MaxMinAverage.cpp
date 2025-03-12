@@ -1,6 +1,7 @@
+#include "main.h"
 #include "MaxMinAverage.h"    
 
-int64_t MaxElement(const int64_t arr[], int32_t size) {
+int32_t MaxElement(int32_t* arr, int32_t size) {
     int32_t maxIndex{};
     int32_t maxValue = arr[0]; 
 
@@ -15,7 +16,7 @@ int64_t MaxElement(const int64_t arr[], int32_t size) {
 }
 
 
-int64_t MinElement(const int64_t arr[], int32_t size) {
+int32_t MinElement(int32_t* arr, int32_t size) {
     int32_t minIndex{};
     int32_t minValue = arr[0];
 
@@ -28,9 +29,9 @@ int64_t MinElement(const int64_t arr[], int32_t size) {
     return minIndex;
 }
 
-double CalculateAverage(const int64_t arr[], int32_t size) {
-   int64_t maxIndex = { MaxElement( arr,size) };
-   int64_t minIndex = { MinElement(arr,size) };
+double CalculateAverage(int32_t arr, int32_t size) {
+   int32_t maxIndex = { MaxElement( arr,size) };
+   int32_t minIndex = { MinElement(arr,size) };
    return (arr[maxIndex] + arr[minIndex]) / 2;
 }
 

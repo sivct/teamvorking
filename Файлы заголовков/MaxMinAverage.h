@@ -1,9 +1,11 @@
+#pragma once
+
 #ifndef MAXMINAVERAGE_H
 #define MAXMINAVERAGE_H
 
 #include <iostream>
-int64_t MaxElement(const int64_t arr[], int32_t size);
-int64_t MinElement(const int64_t arr[], int32_t size);
-double CalculateAverage(const int64_t arr[], int32_t size);
+int32_t MaxElement(int32_t* arr, int32_t size);
+int32_t MinElement(int32_t* arr, int32_t size);
+double CalculateAverage(int32_t arr, int32_t size);
 
 #endif

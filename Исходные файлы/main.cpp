@@ -1,6 +1,7 @@
 #include "main.h"
 #include "Bouble_Sort.h"
 #include "rm_minus_num.h"
+#include "MaxMinAverage.h"
 
 int main() {
 	setlocale(LC_ALL, "Rus");
@@ -25,7 +26,7 @@ int main() {
 
 	while (true) {
 		std::cout << "[1]PrintArray, вывести элементы массива на консоль;\n[2]Функция FindElement для поиска элемента в массиве;\n"
-			<< "[3]CountElements, которая ищет количество элементов между первым и последним нулевыми элементами в массиве;\n[4] MaxElement;\n"
+			<< "[3]CountElements, которая ищет количество элементов между первым и последним нулевыми элементами в массиве;\n[4]MaxElement;\n"
 			<< "[5]MixElement;\n[6]CalculateAverage, находит среднее арифметическое элементов между максимальным и минимальным элементами в массиве целых чисел;\n"
 			<< "[7]Найти сумму всех простых чисел в массиве;\n[8]Сортировка массива пузырьком;\n[9]Поменять порядок элементов массива на обратный;\n"
 			<< "[10]Удалить из массива все отрицательные числа; \n[11]Очистить экран; \n[12]Выход.\n";
@@ -135,13 +136,19 @@ int main() {
 			}
 			break;
 		case 4:
-			
+			Input_Size(size);
+			Input_Array(arr_int, size);
+			std::cout << "MaxElement -- " << MaxElement(arr_int, size);
 			break;
 		case 5:
-
+			Input_Size(size);
+			Input_Array(arr_int, size);
+			std::cout << "MixElement -- " << MixElement(arr_int, size);
 			break;
 		case 6:
-
+			Input_Size(size);
+			Input_Array(arr_int, size);
+			std::cout << "Арифметическое элементов между максимальным и минимальным элементами в массиве целых чисел == " << CalculateAverage(arr_int, size);
 			break;
 		case 7:
 
