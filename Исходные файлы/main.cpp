@@ -2,6 +2,7 @@
 #include "Bouble_Sort.h"
 #include "rm_minus_num.h"
 #include "MaxMinAverage.h"
+#include "InsertSort.h"
 
 int main() {
 	setlocale(LC_ALL, "Rus");
@@ -29,7 +30,7 @@ int main() {
 			<< "[3]CountElements, которая ищет количество элементов между первым и последним нулевыми элементами в массиве;\n[4]MaxElement;\n"
 			<< "[5]MixElement;\n[6]CalculateAverage, находит среднее арифметическое элементов между максимальным и минимальным элементами в массиве целых чисел;\n"
 			<< "[7]Найти сумму всех простых чисел в массиве;\n[8]Сортировка массива пузырьком;\n[9]Поменять порядок элементов массива на обратный;\n"
-			<< "[10]Удалить из массива все отрицательные числа; \n[11]Очистить экран; \n[12]Выход.\n";
+			<< "[10]Удалить из массива все отрицательные числа;\n[11]Сортировка массива вставкой;\n[12]Очистить экран; \n[13]Выход.\n";
 		std::cout << "Номер задачи == ";
 		std::cin >> switch_on;
 
@@ -165,9 +166,14 @@ int main() {
 			Negative_Numbers_Are_Equal_To_Zero(arr_int, size);
 			break;
 		case 11:
-			CLS();
+			Input_Size(size);
+			Input_Array(arr_int, size);
+			insertionSort(arr_int, size);
 			break;
 		case 12:
+			CLS();
+			break;
+		case 13:
 			return 0;
 		}
 	}
