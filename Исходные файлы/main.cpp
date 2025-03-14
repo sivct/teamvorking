@@ -167,7 +167,7 @@ int main() {
 		case 11:
 			Input_Size(size);
 			Input_Array(arr_int, size);
-
+			void insertionSort( arr_int,size)
 			break;
 		case 12:
 			CLS();
