@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <cstdint>  
-void insertionSort(int64_t array[], int32_t length);
+void insertionSort(int32_t* array, int32_t length);
 
 #endif
 
