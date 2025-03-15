@@ -144,7 +144,7 @@ int main() {
 		case 5:
 			Input_Size(size);
 			Input_Array(arr_int, size);
-			std::cout << "MixElement -- " << MixElement(arr_int, size);
+			std::cout << "MinElement -- " << MinElement(arr_int, size);
 			break;
 		case 6:
 			Input_Size(size);
