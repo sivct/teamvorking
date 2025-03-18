@@ -29,9 +29,9 @@ int32_t MinElement(int32_t* arr, int32_t size) {
     return minIndex;
 }
 
-double CalculateAverage(int32_t arr, int32_t size) {
-    int32_t maxIndex = { MaxElement(arr,size) };
-    int32_t minIndex = { MinElement(arr,size) };
-    return (arr[maxIndex] + arr[minIndex]) / 2;
+double CalculateAverage(int32_t* arr, int32_t size) {
+   int32_t maxIndex = { MaxElement( arr,size) };
+   int32_t minIndex = { MinElement(arr,size) };
+   return (arr[maxIndex] + arr[minIndex]) / 2;
 }
 

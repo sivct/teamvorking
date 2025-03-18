@@ -1,3 +1,4 @@
+#pragma once
 
 #ifndef INSERTSORT_H
 #define INSERTSORT_H
