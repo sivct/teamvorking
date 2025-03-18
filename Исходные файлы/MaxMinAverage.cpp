@@ -3,16 +3,16 @@
 
 int32_t MaxElement(int32_t* arr, int32_t size) {
     int32_t maxIndex{};
-    int32_t maxValue = arr[0]; 
+    int32_t maxValue = arr[0];
 
-    for (int32_t i = {1}; i < size; ++i) {
-        if (arr[i] > maxValue) { 
-            maxValue = arr[i]; 
-            maxIndex = i; 
+    for (int32_t i { 1 }; i < size; ++i) {
+        if (arr[i] > maxValue) {
+            maxValue = arr[i];
+            maxIndex = i;
         }
     }
 
-    return maxIndex; 
+    return maxIndex;
 }
 
 
