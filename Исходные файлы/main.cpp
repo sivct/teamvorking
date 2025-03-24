@@ -3,6 +3,7 @@
 #include "rm_minus_num.h"
 #include "MaxMinAverage.h"
 #include "InsertSort.h"
+#include "dimad.h"
 
 int main() {
 	setlocale(LC_ALL, "Rus");
