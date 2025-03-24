@@ -3,11 +3,11 @@
 
 #include <iostream>
 
-void reverseArray(int32_t* arr, int32_t size);
+void reverseArray(int32_t*, int32_t);
 
-bool isPrime(int32_t num);
+bool isPrime(int32_t);
 
-int32_t sumOfPrimes(int32_t* arr, int32_t size);
+int32_t sumOfPrimes(int32_t*, int32_t);
 
 
 #endif
