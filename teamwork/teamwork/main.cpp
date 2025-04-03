@@ -9,7 +9,7 @@
 int main() {
 	setlocale(LC_ALL, "Rus");
 	int32_t size{};
-	int16_t switch_on{};
+	uint16_t switch_on{};
 	Input_Size(size);
 	Check_Size(size);
 
@@ -28,18 +28,18 @@ int main() {
 
 
 	while (true) {
-		std::cout << "[1]PrintArray, âûâåñòè ýëåìåíòû ìàññèâà íà êîíñîëü;\n[2]Ôóíêöèÿ FindElement äëÿ ïîèñêà ýëåìåíòà â ìàññèâå;\n"
-			<< "[3]CountElements, êîòîðàÿ èùåò êîëè÷åñòâî ýëåìåíòîâ ìåæäó ïåðâûì è ïîñëåäíèì íóëåâûìè ýëåìåíòàìè â ìàññèâå;\n[4]MaxElement;\n"
-			<< "[5]MinElement;\n[6]CalculateAverage, íàõîäèò ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìåæäó ìàêñèìàëüíûì è ìèíèìàëüíûì ýëåìåíòàìè â ìàññèâå öåëûõ ÷èñåë;\n"
-			<< "[7]Íàéòè ñóììó âñåõ ïðîñòûõ ÷èñåë â ìàññèâå;\n[8]Ñîðòèðîâêà ìàññèâà ïóçûðüêîì;\n[9]Ïîìåíÿòü ïîðÿäîê ýëåìåíòîâ ìàññèâà íà îáðàòíûé;\n"
-			<< "[10]Óäàëèòü èç ìàññèâà âñå îòðèöàòåëüíûå ÷èñëà;\n[11]Ñîðòèðîâêà ìàññèâà âñòàâêîé;\n[12]Î÷èñòèòü ýêðàí; \n[13]Âûõîä.\n";
-		std::cout << "Íîìåð çàäà÷è == ";
+		std::cout << "[1]PrintArray, Ã¢Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã» Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ã­Ã  ÃªÃ®Ã­Ã±Ã®Ã«Ã¼;\n[2]Ã”Ã³Ã­ÃªÃ¶Ã¨Ã¿ FindElement Ã¤Ã«Ã¿ Ã¯Ã®Ã¨Ã±ÃªÃ  Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥;\n"
+			<< "[3]CountElements, ÃªÃ®Ã²Ã®Ã°Ã Ã¿ Ã¨Ã¹Ã¥Ã² ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢ Ã¬Ã¥Ã¦Ã¤Ã³ Ã¯Ã¥Ã°Ã¢Ã»Ã¬ Ã¨ Ã¯Ã®Ã±Ã«Ã¥Ã¤Ã­Ã¨Ã¬ Ã­Ã³Ã«Ã¥Ã¢Ã»Ã¬Ã¨ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã Ã¬Ã¨ Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥;\n[4]MaxElement;\n"
+			<< "[5]MinElement;\n[6]CalculateAverage, Ã­Ã ÃµÃ®Ã¤Ã¨Ã² Ã±Ã°Ã¥Ã¤Ã­Ã¥Ã¥ Ã Ã°Ã¨Ã´Ã¬Ã¥Ã²Ã¨Ã·Ã¥Ã±ÃªÃ®Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢ Ã¬Ã¥Ã¦Ã¤Ã³ Ã¬Ã ÃªÃ±Ã¨Ã¬Ã Ã«Ã¼Ã­Ã»Ã¬ Ã¨ Ã¬Ã¨Ã­Ã¨Ã¬Ã Ã«Ã¼Ã­Ã»Ã¬ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã Ã¬Ã¨ Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ Ã¶Ã¥Ã«Ã»Ãµ Ã·Ã¨Ã±Ã¥Ã«;\n"
+			<< "[7]ÃÃ Ã©Ã²Ã¨ Ã±Ã³Ã¬Ã¬Ã³ Ã¢Ã±Ã¥Ãµ Ã¯Ã°Ã®Ã±Ã²Ã»Ãµ Ã·Ã¨Ã±Ã¥Ã« Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥;\n[8]Ã‘Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ  Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ã¯Ã³Ã§Ã»Ã°Ã¼ÃªÃ®Ã¬;\n[9]ÃÃ®Ã¬Ã¥Ã­Ã¿Ã²Ã¼ Ã¯Ã®Ã°Ã¿Ã¤Ã®Ãª Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ã­Ã  Ã®Ã¡Ã°Ã Ã²Ã­Ã»Ã©;\n"
+			<< "[10]Ã“Ã¤Ã Ã«Ã¨Ã²Ã¼ Ã¨Ã§ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ã¢Ã±Ã¥ Ã®Ã²Ã°Ã¨Ã¶Ã Ã²Ã¥Ã«Ã¼Ã­Ã»Ã¥ Ã·Ã¨Ã±Ã«Ã ;\n[11]Ã‘Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ  Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ã¢Ã±Ã²Ã Ã¢ÃªÃ®Ã©;\n[12]ÃŽÃ·Ã¨Ã±Ã²Ã¨Ã²Ã¼ Ã½ÃªÃ°Ã Ã­; \n[13]Ã‚Ã»ÃµÃ®Ã¤.\n";
+		std::cout << "ÃÃ®Ã¬Ã¥Ã° Ã§Ã Ã¤Ã Ã·Ã¨ == ";
 		std::cin >> switch_on;
 
 		switch (switch_on) {
 		default:
 			break;
-		case '1':
+		case 1:
 			Input_your_choise(choise);
 
 			switch (choise) {
@@ -59,7 +59,7 @@ int main() {
 				break;
 			}
 			break;
-		case '2':
+		case 2:
 			Input_your_choise(choise);
 
 			switch (choise) {
@@ -100,7 +100,7 @@ int main() {
 				break;
 			}
 			break;
-		case '3':
+		case 3:
 			Input_your_choise(choise);
 
 			switch (choise) {
@@ -138,43 +138,43 @@ int main() {
 				break;
 			}
 			break;
-		case '4':
+		case 4:
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			std::cout << "MaxElement -- " << MaxElement(arr_int, size);
 			break;
-		case '5':
+		case 5:
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			std::cout << "MinElement -- " << MinElement(arr_int, size);
 			break;
-		case '6':
+		case 6:
 			Input_Size(size);
 			Input_Array(arr_int, size);
-			std::cout << "Àðèôìåòè÷åñêîå ýëåìåíòîâ ìåæäó ìàêñèìàëüíûì è ìèíèìàëüíûì ýëåìåíòàìè â ìàññèâå öåëûõ ÷èñåë == " << CalculateAverage(arr_int, size);
+			std::cout << "Ã€Ã°Ã¨Ã´Ã¬Ã¥Ã²Ã¨Ã·Ã¥Ã±ÃªÃ®Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢ Ã¬Ã¥Ã¦Ã¤Ã³ Ã¬Ã ÃªÃ±Ã¨Ã¬Ã Ã«Ã¼Ã­Ã»Ã¬ Ã¨ Ã¬Ã¨Ã­Ã¨Ã¬Ã Ã«Ã¼Ã­Ã»Ã¬ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã Ã¬Ã¨ Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ Ã¶Ã¥Ã«Ã»Ãµ Ã·Ã¨Ã±Ã¥Ã« == " << CalculateAverage(arr_int, size);
 			break;
-		case '7':
+		case 7:
 
 			break;
-		case '8':
+		case 8:
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			Bouble_Sort(arr_int, size);
 			break;
-		case '9':
+		case 9:
 			break;
-		case '10':
+		case 10:
 			Negative_Numbers_Are_Equal_To_Zero(arr_int, size);
 			break;
-		case '11':
+		case 11:
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			insertionSort(arr_int, size);
 			break;
-		case '12':
+		case 12:
 			CLS();
 			break;
-		case '13':
+		case 13:
 			return 0;
 		}
 	}
