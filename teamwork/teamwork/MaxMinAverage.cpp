@@ -5,7 +5,7 @@ int32_t MaxElement(int32_t* arr, int32_t size) {
     int32_t maxIndex{};
     int32_t maxValue = arr[0];
 
-    for (int32_t i { 1 }; i < size; ++i) {
+    for (int32_t i{ 1 }; i < size; ++i) {
         if (arr[i] > maxValue) {
             maxValue = arr[i];
             maxIndex = i;
@@ -30,8 +30,8 @@ int32_t MinElement(int32_t* arr, int32_t size) {
 }
 
 double CalculateAverage(int32_t* arr, int32_t size) {
-   int32_t maxIndex = { MaxElement( arr,size) };
-   int32_t minIndex = { MinElement(arr,size) };
-   return (arr[maxIndex] + arr[minIndex]) / 2;
+    int32_t maxIndex = { MaxElement(arr,size) };
+    int32_t minIndex = { MinElement(arr,size) };
+    return (static_cast<double>(arr[maxIndex] + arr[minIndex])) / 2;
 }
 
