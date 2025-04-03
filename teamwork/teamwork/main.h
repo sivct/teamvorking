@@ -27,14 +27,14 @@ void Input_Element_To_Find(T& element) {
 
 template <class T >//1
 void PrintArray(T* array, int32_t size) {
-	for (int32_t i{}; i < size; ++i) {
+	for (int16_t i{}; i < size; ++i) {
 		std::cout << array[i] << ' ';
 	}
 }
 
 template <class T >//2
 int32_t FindElement(T* array, int32_t size, T element) {
-	int32_t pruf{};
+	int32_t pruf{}; // не нужен
 	int32_t position{};
 	for (int32_t i{}; i < size; ++i) {
 		if (array[i] == element) {
@@ -64,7 +64,7 @@ int32_t Find_First_Null(T* array, int32_t size) {
 template <class T >
 int32_t Find_Second_Null(T* array, int32_t size) {
 	int32_t index_of_null{ -1 };
-	for (int32_t i{}; i < size; ++i) {
+	for (int32_t i{}; i < size; ++i) { // с конца массива и останавливаться когда находим первый с конца
 		if (array[i] == 0 || array[i] == '0') {
 			index_of_null = i;
 		}

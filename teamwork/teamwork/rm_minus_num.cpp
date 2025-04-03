@@ -14,7 +14,7 @@ void Negative_Numbers_Are_Equal_To_Zero(int32_t* arr, int32_t size) {
 
 	int32_t posIndex{ 0 };
 
-	for (size_t i{ 0 }; i < size; ++i) {
+	for (size_t i{}; i < size; ++i) {
 		if (arr[i] >= 0) {
 			arr[posIndex++] = arr[i];
 		}
