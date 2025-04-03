@@ -4,6 +4,7 @@
 #include "rm_minus_num.h"
 #include "MaxMinAverage.h"
 #include "InsertSort.h"
+#include "dimad.h"
 
 int main() {
 	setlocale(LC_ALL, "Rus");
@@ -38,7 +39,7 @@ int main() {
 		switch (switch_on) {
 		default:
 			break;
-		case 1:
+		case '1':
 			Input_your_choise(choise);
 
 			switch (choise) {
@@ -58,7 +59,7 @@ int main() {
 				break;
 			}
 			break;
-		case 2:
+		case '2':
 			Input_your_choise(choise);
 
 			switch (choise) {
@@ -99,7 +100,7 @@ int main() {
 				break;
 			}
 			break;
-		case 3:
+		case '3':
 			Input_your_choise(choise);
 
 			switch (choise) {
@@ -137,44 +138,43 @@ int main() {
 				break;
 			}
 			break;
-		case 4:
+		case '4':
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			std::cout << "MaxElement -- " << MaxElement(arr_int, size);
 			break;
-		case 5:
+		case '5':
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			std::cout << "MinElement -- " << MinElement(arr_int, size);
 			break;
-		case 6:
+		case '6':
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			std::cout << "Арифметическое элементов между максимальным и минимальным элементами в массиве целых чисел == " << CalculateAverage(arr_int, size);
 			break;
-		case 7:
+		case '7':
 
 			break;
-		case 8:
+		case '8':
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			Bouble_Sort(arr_int, size);
 			break;
-		case 9:
-
+		case '9':
 			break;
-		case 10:
+		case '10':
 			Negative_Numbers_Are_Equal_To_Zero(arr_int, size);
 			break;
-		case 11:
+		case '11':
 			Input_Size(size);
 			Input_Array(arr_int, size);
 			insertionSort(arr_int, size);
 			break;
-		case 12:
+		case '12':
 			CLS();
 			break;
-		case 13:
+		case '13':
 			return 0;
 		}
 	}
